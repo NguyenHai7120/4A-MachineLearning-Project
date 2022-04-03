@@ -1,0 +1,9 @@
+OUTLINE FOR MACHINE LEARNING PROJECT
+----------------------------------------------------------------
+I. Exploration: 
+1. Histogram, distributions
+2. Data transformation: 
+    precip --> log(precip + 1)
+    tp_arome --> log(tp_arome + 1)
+    rain --> log(rain + 1)
+
