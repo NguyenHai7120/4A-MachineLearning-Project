@@ -1,9 +1,22 @@
 OUTLINE FOR MACHINE LEARNING PROJECT
 ----------------------------------------------------------------
 I. Exploration: 
+----------------------------------------------------------------
 1. Histogram, distributions
 2. Data transformation: 
     precip --> log(precip + 1)
     tp_arome --> log(tp_arome + 1)
     rain --> log(rain + 1)
+
+----------------------------------------------------------------
+II. Linear model:
+----------------------------------------------------------------
+1. Linear regression without penalisation and without variable selection
+    1.1. With rain
+    1.2. With log_rain
+
+2. Linear regression with variable selection: Rigde and Lasso
+    2.1. With rain
+    2.2. With log_rain
+
 
