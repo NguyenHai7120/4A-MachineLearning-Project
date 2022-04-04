@@ -9,7 +9,7 @@ I. Exploration:
     rain --> log(rain + 1)
 
 ----------------------------------------------------------------
-II. Linear model:
+II. Machine learning Model and Comparisons
 ----------------------------------------------------------------
 1. Linear regression without penalisation and without variable selection
     1.1. With rain
@@ -19,4 +19,20 @@ II. Linear model:
     2.1. With rain
     2.2. With log_rain
 
+All of next algorithms use only the reponse variable `rain` (or `rain_class` 
+for classification)
+
+3. Poisson regression 
+    3.1. Poisson regression
+    3.2. Poisson regression with l1 regularisation  
+    3.2. Poisson regression with l2 regularisation
+    3.3. Poisson regression with an elastic regularisation
+
+4. Support Vector Machine
+
+5. Regression Tree
+
+6. Random Forest
+
+7. Neural Network
 
