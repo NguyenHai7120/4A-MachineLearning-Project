@@ -3,6 +3,7 @@ OUTLINE FOR MACHINE LEARNING PROJECT
 I. Exploration: 
 ----------------------------------------------------------------
 1. Data loading and visualisation
+    Replace the column "date" into "month" to obtain the new data
 2. Histogram, distributions
 3. Data transformation: 
     precip --> log(precip + 1)
