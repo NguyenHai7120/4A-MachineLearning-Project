@@ -6,21 +6,59 @@ I. Exploration:
 2. Data transformation: 
     precip --> log(precip + 1)
     tp_arome --> log(tp_arome + 1)
-    rain --> log(rain + 1)
+    rain --> log(rain + 1)  : add a new variable for "rain_log"
+
+3. Data preparation: 
+    month : transfr month to dummy variable with 11 levels (remove Jan.)
+    data normalization: centerize and normalize the explicative variables (except month)
+
+    train/test split: test = 20% of data 
+        Save as "train_set.txt" and "test_set.txt", each contains explicative variables and 
+            reponse variables (rain, rain_log, rain_class)
+
+
+---------------------------------------------------------------
+PERFORMANCE MEASURE
+---------------------------------------------------------------
+1. For Regression Model:
+    - MAPE
+    - MSE 
+    - Transform regression to classification using threshold and comparing 
+    with the confusion matrix
+
+2. For Classification Model:
+    - Use directly the confusion matrix
+
+
+
+--------------------------------------------------------------
+ Machine learning Model and Comparisons
+--------------------------------------------------------------
 
 ----------------------------------------------------------------
-II. Machine learning Model and Comparisons
+I. Regression
 ----------------------------------------------------------------
 1. Linear regression without penalisation and without variable selection
-    1.1. With rain
-    1.2. With log_rain
+    With all of the explicative variables (including dummy variables for month)
 
-2. Linear regression with variable selection: Rigde and Lasso
+    1.1. With rain
+    1.2. With rain_log
+    1.3. Comparisons (using all performance measures described above)
+
+2. Linear regression with variable selection: BIC, AIC et R2
     2.1. With rain
     2.2. With log_rain
+    2.3. Comparisons (using all performance measures described above)
 
-All of next algorithms use only the reponse variable `rain` (or `rain_class` 
+NOTE: If rain_log does not work, ll of next algorithms use only the reponse variable `rain` (or `rain_class` 
 for classification)
+
+3. Penalized Regression: Ridge, Lasso and Elastic
+    3.1. Ridge: search for lambda in (0, 2, 0.001)
+    3.2. Lasso: search for lambda in (0, 2, 0.001)
+    3.3. Elastic: search for lambda in (0, 2, 0.001)
+
+
 
 3. Poisson regression 
     3.1. Poisson regression
@@ -28,11 +66,15 @@ for classification)
     3.2. Poisson regression with l2 regularisation
     3.3. Poisson regression with an elastic regularisation
 
-4. Support Vector Machine
+----------------------------------------------------------------
+II. Classification
+----------------------------------------------------------------
 
-5. Regression Tree
+1. Support Vector Machine
 
-6. Random Forest
+2. Regression Tree
 
-7. Neural Network
+3. Random Forest
+
+4. Neural Network
 
