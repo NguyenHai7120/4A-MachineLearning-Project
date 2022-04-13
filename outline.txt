@@ -2,13 +2,14 @@ OUTLINE FOR MACHINE LEARNING PROJECT
 ----------------------------------------------------------------
 I. Exploration: 
 ----------------------------------------------------------------
-1. Histogram, distributions
-2. Data transformation: 
+1. Data loading and visualisation
+2. Histogram, distributions
+3. Data transformation: 
     precip --> log(precip + 1)
     tp_arome --> log(tp_arome + 1)
     rain --> log(rain + 1)  : add a new variable for "rain_log"
 
-3. Data preparation: 
+4. Data preparation: 
     month : transfr month to dummy variable with 11 levels (remove Jan.)
     data normalization: centerize and normalize the explicative variables (except month)
 
