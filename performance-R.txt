@@ -1,0 +1,34 @@
+PERFORMANCE IN TEST SET
+
+REGRESSION
+
+1. Linear model
+- rain_log:  
+    MSE = 0.571967970075163  (in log scale)
+    MAPE = 1068.13612087157  (in log scale)
+
+    MSE = 18.3631364775563
+    MAPE = 4002.17378392314
+- rain:
+    MSE = 21.3125251406604
+    MAPE = 121.924002526752
+
+2. Variable selection (R2, Cp, BIC)
+- rain_log:
+    [1] "TEST ERROR IN LOG SCALE"
+    [1] "Mean Square Error :  0.50143160860573"
+    [1] "MAPE :  113.983081731833"
+    [1] "TEST ERROR"
+    [1] "Mean Square Error :  18.3125035476811"
+    [1] "MAPE :  405.800712823921"
+
+- rain 
+    R2:  rain ~ td + p3031_arome + u10_arome + msl_arome + month3 + month5 + month12
+        [1] "Mean Square Error :  19.3827900641636"
+        [1] "MAPE :  181.666137430207"  
+    Cp: rain ~ td + msl_arome + month5 + month12
+        [1] "Mean Square Error :  19.6902803085938"
+        [1] "MAPE :  139.133963965623"
+    BIC: rain ~ msl_arome + month12
+        [1] "Mean Square Error :  19.4248301397696"
+        [1] "MAPE :  108.045837943277"
