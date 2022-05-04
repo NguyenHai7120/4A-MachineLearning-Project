@@ -32,3 +32,103 @@ REGRESSION
     BIC: rain ~ msl_arome + month12
         [1] "Mean Square Error :  19.4248301397696"
         [1] "MAPE :  108.045837943277"
+
+3. Rigde Regression
+    [1] "TEST ERROR"
+    [1] "Mean Square Error :  20.5669146448067"
+    [1] "MAPE :  160.267693078013"
+
+    [1] "TEST ERROR lambda 1se"
+    [1] "Mean Square Error :  24.1927238493026"
+    [1] "MAPE :  115.531336501452"
+
+4. LASSO Regression
+    [1] "TEST ERROR MIN"
+    [1] "Mean Square Error :  20.7305547034728"
+    [1] "MAPE :  116.730338753093"
+
+    [1] "TEST ERROR 1SE"
+    [1] "Mean Square Error :  20.5656087857771"
+    [1] "MAPE :  162.781751550384"
+
+5. Elastic-Net with alpha = 0.5 
+    [1] "TRAINING ERROR"
+    [1] "Mean Square Error :  15.0091888602407"
+    [1] "MAPE :  111.415804865654"
+
+    [1] "TEST ERROR"
+    [1] "Mean Square Error :  20.2094157495366"
+    [1] "MAPE :  169.919491987486"
+
+    [1] "TEST ERROR 1SE"
+    [1] "Mean Square Error :  23.0360446692455"
+    [1] "MAPE :  110.352303807993"
+
+6. Poisson regression
+    6.1. Simple Poisson Regression
+        [1] "TRAING ERROR"
+        [1] "Mean Square Error :  13.9332687615474"
+        [1] "MAPE :  111.309421613213"
+
+        [1] "TRAING ERROR"
+        [1] "Mean Square Error :  13.9332687615474"
+        [1] "MAPE :  111.309421613213"
+    
+    6.2. Poisson regression with l1
+        measure = mae
+
+        [1] "TRAINING ERROR MIN"
+        [1] "Mean Square Error :  14.3997956238642"
+        [1] "MAPE :  107.869655669553"
+        [1] "TRAINING ERROR "
+        [1] "Mean Square Error :  15.6926207210401"
+        [1] "MAPE :  107.877202387918"
+        [1] "TEST ERROR MIN"
+        [1] "Mean Square Error :  18.0256455811919"
+        [1] "MAPE :  159.473711082111"
+        [1] "TEST ERROR 1SE"
+        [1] "Mean Square Error :  18.7471578448497"
+        [1] "MAPE :  108.253091554062"
+
+        measure = mse
+
+        [1] "TRAINING ERROR MIN"
+        [1] "Mean Square Error :  15.2605232812836"
+        [1] "MAPE :  108.042789822177"
+        [1] "TRAINING ERROR "
+        [1] "Mean Square Error :  17.0198315461235"
+        [1] "MAPE :  110.378572278913"
+        [1] "TEST ERROR MIN"
+        [1] "Mean Square Error :  17.8808485262799"
+        [1] "MAPE :  111.316632890936"
+        [1] "TEST ERROR 1SE"
+        [1] "Mean Square Error :  21.2518819595896"
+        [1] "MAPE :  106.290666442746"
+
+    6.3. Poisson regression with l2
+        [1] "TRAINING ERROR MIN"
+        [1] "Mean Square Error :  15.094731750566"
+        [1] "MAPE :  107.883359024713"
+        [1] "TRAINING ERROR "
+        [1] "Mean Square Error :  17.5016430945703"
+        [1] "MAPE :  112.073925186795"
+        [1] "TEST ERROR MIN"
+        [1] "Mean Square Error :  17.7639420459068"
+        [1] "MAPE :  113.735540283601"
+        [1] "TEST ERROR 1SE"
+        [1] "Mean Square Error :  22.0768557478289"
+        [1] "MAPE :  107.468265319502"
+
+    6.4. Poisso regression with l1 and l2
+        [1] "TRAINING ERROR MIN"
+        [1] "Mean Square Error :  15.1129147835842"
+        [1] "MAPE :  107.504772814314"
+        [1] "TRAINING ERROR "
+        [1] "Mean Square Error :  18.0103035192589"
+        [1] "MAPE :  113.732150256915"
+        [1] "TEST ERROR MIN"
+        [1] "Mean Square Error :  17.9187459068825"
+        [1] "MAPE :  113.541569066826"
+        [1] "TEST ERROR 1SE"
+        [1] "Mean Square Error :  23.1258631574295"
+        [1] "MAPE :  110.682469360467"

@@ -55,13 +55,14 @@ I. Regression
 NOTE: If rain_log does not work, all of next algorithms use only the reponse variable `rain` (or `rain_class` 
 for classification)
 
-3. Penalized Regression: Ridge, Lasso and Elastic
+In the following sections, we just use the `rain` reponse
+
+3. Penalized Regression: Ridge, Lasso and Elastic 
+
     3.1. Ridge: search for lambda in (0, 2, 0.001)
     3.2. Lasso: search for lambda in (0, 2, 0.001)
     3.3. Elastic: search for lambda in (0, 2, 0.001)
-
-
-
+    
 3. Poisson regression 
     3.1. Poisson regression
     3.2. Poisson regression with l1 regularisation  
